@@ -1,0 +1,94 @@
+/* Base classes */
+.d-flex {
+    display: flex;
+}
+
+
+.left-box,
+.right-box {
+    width: 570px;
+    background-color: #F2F2F2;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.wraper-box {
+    display: flex;
+    justify-content: space-between;
+}
+.image-block {
+    display: flex;
+}
+.read {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.child1 {
+    width: 570px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child2 {
+    width: 570px;
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mshobeli {
+    display: flex;
+    justify-content: space-between;
+}
+.images-wraper {
+    justify-content: space-between;
+}
+.image2 {
+    width: 270px;
+}
+.image2 img {
+    width: 100%;
+}
+/* .image2 img {
+    width: 270px;
+} */
+
+.fb-icon {
+    color: blue;
+    font-size: 30px;
+    transition: color 0.5s linear 0.7s;
+}
+.fb-icon:hover {
+    color: yellow;
+
+}
+.fa-instagram {
+    color: red;
+    font-size: 30px;
+    transition: color 0.5s linear 0.7s;
+}
+.fa-instagram:hover {
+    color: blue;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+.box:first-child {
+    background-color: red;
+}
+.box:nth-child(2) {
+    background-color: yellow;
+}
+.box:nth-child(3) {
+    background-color: aqua;
+}
+.box:nth-child(4) {
+    background-color: blue;
+}

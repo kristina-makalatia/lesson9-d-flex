@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Page </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Form -->
+<section>
+    <form class="form">
+        <div class="form-wraper">
+            <label for="fname"> First Name </label>
+            <input class="input-wraper" type="text" name="fisrtname" id="fname" placeholder="Your First Name..." required>
+        </div>
+        <div class="form-wraper">
+            <label for="mypass">Password</label>
+            <input class="input-wraper" type="password" name="mypasword" id="mypass" placeholder="Your Password..." required>
+        </div>
+
+        <div  class="form-wraper">
+            <label> Your Mesage</label>
+            <textarea class="textarea" name="message" id="mymessage"  placeholder="Your Message..."></textarea>
+        </div>
+
+        <div>
+            <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label>
+            </div>
+            <div>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label>
+            </div>
+            <div>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <button type="submit"> Send </button>
+    </form>
+</section>
+
+    
+</body>
+</html>

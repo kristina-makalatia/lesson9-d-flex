@@ -1,52 +1,87 @@
+
 /* Base classes */
 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 
 .left-box,
 .right-box {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     background-color: #F2F2F2;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 .wraper-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .image-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .read {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .child1 {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     height: 400px;
     background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .child2 {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     height: 400px;
     background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .mshobeli {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .images-wraper {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .image2 {
     width: 270px;
@@ -61,6 +96,8 @@
 .fb-icon {
     color: blue;
     font-size: 30px;
+    -webkit-transition: color 0.5s linear 0.7s;
+    -o-transition: color 0.5s linear 0.7s;
     transition: color 0.5s linear 0.7s;
 }
 .fb-icon:hover {
@@ -70,6 +107,8 @@
 .fa-instagram {
     color: red;
     font-size: 30px;
+    -webkit-transition: color 0.5s linear 0.7s;
+    -o-transition: color 0.5s linear 0.7s;
     transition: color 0.5s linear 0.7s;
 }
 .fa-instagram:hover {
@@ -79,8 +118,9 @@
 .box {
     width: 200px;
     height: 200px;
+    background-color: aqua;
 }
-.box:first-child {
+/* .box:nth-child(1) {
     background-color: red;
 }
 .box:nth-child(2) {
@@ -91,4 +131,91 @@
 }
 .box:nth-child(4) {
     background-color: blue;
+} */
+
+.box:nth-child(odd) {
+    background: red;
 }
+.box:nth-child(2n) {
+    background: blue;
+}
+
+.box:nth-child(2) .test-p {
+    color: #fff;
+}
+.box:last-child .test-p {
+    color: aqua;
+}
+
+
+
+/* Form */
+/* input {
+    width: 100%;
+} */
+.form-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.form {
+    width: 700px;
+}
+.textarea {
+    height: 100px;
+    resize: none;
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+}
+.input-wraper {
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid blue;
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+
+}
+.input-wraper::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper::-moz-placeholder, .textarea::-moz-placeholder {
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper::-ms-input-placeholder, .textarea::-ms-input-placeholder {
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper::placeholder,
+.textarea::placeholder {
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper:focus,
+.textarea:focus {
+    outline: none;
+}
+/* input[type=text] {
+    width: 500px;
+} */
+.form-wraper {
+    margin-bottom: 15px;
+}
+
+
+
+/* responsive */
+
